@@ -11,6 +11,27 @@ class LinebotController < ApplicationController
     }
   end
 
+  def callback
+    body = request.body.read
+    signature = request.env['HTTP_X_LINE_SIGNATURE']
+
+    unless client.validate_signature(body, signature)
+      head :bad_request
+    end
+
+    events = client.parse_events_from(body)
+
+    events.each do |event|
+      case event
+      when Line::Bot::Event::Message
+        case event.type
+        when Line::Bot::Event::MessageType::Text
+
+        end
+      end
+    end
+  end
+
   
   # おうむ返しBotを作成した時のcallbackメソッド
   # def callback

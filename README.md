@@ -1,24 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Railsを用いたおうむ返しBotを作成。
 
-Things you may want to cover:
+![おうむ返しBot](https://github.com/masashiSumiishi/line-bot/blob/fix-controllers-0713/app/assets/images/%E3%81%8A%E3%81%86%E3%82%80%E8%BF%94%E3%81%97.png)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
